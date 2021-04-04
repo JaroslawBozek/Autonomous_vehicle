@@ -11,4 +11,4 @@ The goal of the project was to add the following functionalities to a simulated 
 
 The following diagram shows the idea behind the entire system:
 
-![](img.diagram.png)
+![](img/diagram.png)
