@@ -38,7 +38,9 @@ The third, customised architecture seemed to give the best results. With a modif
 
 Architecture of the created model:
 
-![](img/architecture.PNG)
+
+
+
 
 The 'train/CNN.py' script includes the preprocessing and training of the CNN model.
 
