@@ -30,9 +30,10 @@ The following diagram shows the idea behind the entire system:
 
 Three convolutional networks models were considered during the implementation
 
+* ResNet
 * EfficientNet
 * [Network by github.com/maxritter](https://github.com/maxritter/SDC-End-to-end-driving?fbclid=IwAR3Md7GCu1JMYJ-xzSEOihjX94t30AZDxypfHpQWLQ1J06Dri437TFBLtrY)
-* ResNet
+
 
 The third, customised architecture seemed to give the best results. With a modification of a few layers, the network was ready for training. The initial data collected from the front camera had the dimensions of 800x800. Because most of the image contained the sky and vehicle's hood, only 220x800 part of the image was taken into account and then resized to 200x200 RGB image.
 
