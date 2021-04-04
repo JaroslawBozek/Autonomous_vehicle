@@ -42,4 +42,9 @@ Architecture of the created model:
 
 The 'train/CNN.py' script includes the preprocessing and training of the CNN model.
 
+## Scripts
+
+The scripts are contained in 'av_07/scripts'. Every Python script creates an individual rosnode and subscribes/publishes following data:
+*controller_node - Subscribes the input from joystick/keyboard, allows to control the vehicle, turn on data collection and autonomous steering
+*states_node   
 
