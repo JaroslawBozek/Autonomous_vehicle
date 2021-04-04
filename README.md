@@ -30,9 +30,9 @@ The following diagram shows the idea behind the entire system:
 
 Three convolutional networks models were considered during the implementation
 
-* ResNet
 * EfficientNet
 * [Network by github.com/maxritter](https://github.com/maxritter/SDC-End-to-end-driving?fbclid=IwAR3Md7GCu1JMYJ-xzSEOihjX94t30AZDxypfHpQWLQ1J06Dri437TFBLtrY)
+* ResNet
 
 The third, customised architecture seemed to give the best results. With a modification of a few layers, the network was ready for training. The initial data collected from the front camera had the dimensions of 800x800. Because most of the image contained the sky and vehicle's hood, only 220x800 part of the image was taken into account and then resized to 200x200 RGB image.
 
@@ -46,5 +46,8 @@ The 'train/CNN.py' script includes the preprocessing and training of the CNN mod
 
 The scripts are contained in 'av_07/scripts'. Every Python script creates an individual rosnode and subscribes/publishes following data:
 *controller_node - Subscribes the input from joystick/keyboard, allows to control the vehicle, turn on data collection and autonomous steering
-*states_node   
+*states_node - Subscribes car's global x,y,z velocities and publishes them as one vector
+*visualiser_node - Subscribes car's front camera image, and its current parameters and displays them in a new window
+*collector_node - Subscribes car's front camera image, its current velocity and steer and saves them in data folder
+*control_prediction_node - Subscribes car's front camera image and predicts its velocity and steer using the CNN model
 
