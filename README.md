@@ -45,7 +45,7 @@ The `train/CNN.py` script includes the preprocessing and training of the CNN mod
 
 ## Scripts
 
-The scripts are contained in 'av_07/scripts'. Every Python script creates an individual rosnode and subscribes/publishes following data:
+The scripts are contained in `av_07/scripts`. Every Python script creates an individual rosnode and subscribes/publishes following data:
 * controller_node - Subscribes the input from joystick/keyboard, allows to control the vehicle, turn on the data collection and autonomous steering
 * states_node - Subscribes car's global x,y,z velocities and publishes them as one vector
 * visualiser_node - Subscribes car's front camera image, and its current parameters and displays them in a new window
