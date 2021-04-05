@@ -4,7 +4,7 @@
 
 ## Dependencies
 * Docker
-* Ubuntu 18 or Ubuntu 20
+* Ubuntu 18.04 or Ubuntu 20.04
 
 ## Goal
 The goal of the project was to add the following functionalities to a simulated car in gazebo environment:
