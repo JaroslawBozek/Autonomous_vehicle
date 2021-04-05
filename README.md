@@ -41,7 +41,7 @@ Architecture of the created model:
 
 ![](img/architecture.PNG)
 
-The 'train/CNN.py' script includes the preprocessing and training of the CNN model.
+The `train/CNN.py` script includes the preprocessing and training of the CNN model.
 
 ## Scripts
 
