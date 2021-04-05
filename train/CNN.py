@@ -4,7 +4,6 @@ import argparse
 import matplotlib.image as npimg
 import os
 
-## Keras
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
@@ -12,7 +11,6 @@ from tensorflow.keras.layers import Convolution2D, MaxPooling2D, Dropout, Flatte
 import cv2
 import pandas as pd
 
-## Sklearn
 from sklearn.model_selection import train_test_split
 
 
@@ -36,9 +34,9 @@ def nvidia_model():
   model.add(Conv2D(64, 3, strides=(1, 1), padding="valid", kernel_initializer='glorot_uniform'))
   model.add(ELU())
   model.add(Dropout(0.2))
-  # Flatten layer
+
   model.add(Flatten())
-  # Three fully connected layer with dropout on first two
+
   model.add(Dense(200, kernel_initializer='glorot_uniform'))
   model.add(ELU())
   model.add(Dropout(0.2))
